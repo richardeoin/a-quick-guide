@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[a4paper,left=2cm,top=2cm]{geometry}
+
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Analysis of Superpressure Balloon using the ideal gas law}
+\author{Richard Meadows 2016}
+
+Analysis of Superpressure Balloon using the ideal gas law.
+
+\[
+P_{super} = P_{gas} - P_{air} \ \ \ \ (1)
+\]
+
+We can write the ideal gas equation for the gas inside the balloon:
+
+\[
+ P_{gas}V = {m_{gas}\over{M_{gas}}} R T_{gas} \ \ \ \ (2)
+\]
+
+Since the system is floating, we know the mass of the air displaced is
+$m_{system}$. So we can also write the idea gas equation for the air
+displaced by the balloon.
+
+\[
+ P_{air}V = {m_{system}\over{M_{air}}} R T_{air} \ \ \ \ (3)
+\]
+
+We assume the volumes are equal, so we can subsitiute one into the other.
+
+\[
+ P_{gas} = P_{air} \bigg[ {{{m_{gas}\over{M_{gas}}} R T_{gas}}\over{{m_{system}\over{M_{air}}} R T_{air}}}  \bigg]  \ \ \ \ (4)
+\]
+
+Re-arrange and cancel $R$:
+
+\[
+ P_{gas} = { P_{air} \bigg[ { {m_{gas}T_{gas}M_{air}}\over{M_{gas}T_{air}m_{system}} } \bigg]}  \ \ \ \ (5)
+\]
+
+Now we can use the definition of superpressure (1):
+
+\[
+P_{super} = P_{gas} - P_{air} \ \ \ \ (1)
+\]
+
+\[
+ P_{super} = { P_{air} \bigg[ { {m_{gas}T_{gas}M_{air}}\over{M_{gas}T_{air}m_{system}} } - 1\bigg]}  \ \ \ \ (6)
+\]
+
+Substituting in our expression for $P_{air}$:
+
+\[
+ P_{air} = {{m_{system}R T_{air}}\over{M_{air}V}} \ \ \ \ (3)
+\]
+
+\[
+ P_{super} = { {{m_{system}R T_{air}}\over{M_{air}V}} \bigg[ { {m_{gas}T_{gas}M_{air}}\over{M_{gas}T_{air}m_{system}} } - 1\bigg]}  \ \ \ \ (7)
+\]
+
+\[
+ P_{super} = { {R\over{V}} \bigg[ { {m_{gas}}\over{M_{gas}} } T_{gas} - { {m_{system}}\over{M_{system}} } T_{air}\bigg]}  \ \ \ \ (8)
+\]
+
+We define supertemperature in the same way as superpressure:
+
+\[
+ T_{super} = T_{gas} - T_{air} \ \ \ \ (9)
+\]
+
+\[
+ P_{super} = { {R\over{V}} \bigg[ \Big( {m_{gas}\over{M_{gas}}} - {m_{system}\over{M_{air}}} \Big)T_{air}   +  {{m_{gas}}\over{M_{gas}}}T_{super} \bigg]} \ \ \ \ \ \ (10)
+\]
+
+We can reasonably say the superpressure due to the temperature dominates, so
+
+\[
+ {P_{super}\over{T_{super}}} \approx   {{m_{gas}}\over{M_{gas}}}{R\over{V}} \ \ \ \ \ (11)
+\]
+
+\end{document}

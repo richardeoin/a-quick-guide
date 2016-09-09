@@ -1,0 +1,367 @@
+\documentclass{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+\title[Small superpressure]{A quick guide to small superpressure}
+\subtitle{\url{https://github.com/richardeoin/a-quick-guide}}
+\author{Richard Meadows}
+\institute{UKHAS Conference 2016}
+\date{}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Superpressure is.. }
+
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{itemize}
+      \item Gas sealed within the envelope.
+        %% if the balloon is to do anything useful, this gas will end
+        %% up at a higher pressure than the surrounding air - hence
+        %% the name
+      \item Envelope is intended to be inelastic.
+        %% that is, the envelope will stop stretching and become
+        %% stable, The resut of this is that the balloon remains at a
+        %% particular density-altitude.
+
+      \end{itemize}
+
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{figure}[!ht]
+        %% image of lally balloon
+        \includegraphics[width=1\textwidth]{lally_1967_balloon.png}
+        \caption{GHOST Balloon, Lally 1967}
+
+        %% this image is from when first
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+
+\end{frame}
+
+\begin{frame}{Can Amateurs do this too?}
+
+  \begin{itemize}
+  \item Yes!
+  \item See also Dan Bowen at \href{https://ukhas.org.uk/general:ukhasconference}{UKHAS 2011}.
+  \end{itemize}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}[!ht]
+        %% ubseds6
+        \includegraphics[width=1\textwidth]{ubseds6_altitude_plot.png}
+        \caption{UBSEDS6, 7th June 2015}
+      \end{figure}
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}[!ht]
+        %% image of b-64
+        \includegraphics[width=1\textwidth]{B-64-all.jpg}
+        \caption{B-64, Leo Bodnar 2014}
+      \end{figure}
+    \end{column}
+  \end{columns}
+
+  % Multi-day flights with small envelopes (1-2 meters on the longest axis).
+  % Leo flight -- 134 days
+
+  %% go back and check Dan's presentation too - I haven't got time to
+  %% return to everything he discussed.
+
+\end{frame}
+
+%% What does one look like in flight?
+
+\begin{frame}{In Flight}
+
+  \begin{figure}[!ht]
+    %% image of ubseds20
+    \centering
+    \includegraphics[width=0.8\textwidth]{UBSEDL_2016-08-29T10-24-37_3.png}
+    \caption{UBSEDS20 balloon at 12.5km float, 29th August 2016}
+  \end{figure}
+
+  %% lots of people here contributed to this image..
+
+\end{frame}
+\begin{frame}{Floating}
+
+  % Floating - what does this mean?
+  % calcualate density
+
+  Float when:
+
+  \[
+    \text{Atmospheric Density} = \text{System Density} = {\frac{\Sigma{m}}{V}}
+  \]
+
+  %% we can assume that the payload has no volume, and the same for
+  %% the material that makes the balloon.
+
+  However, the balloon envelope stretches somewhat:
+  % Envelope isn't perfectly inelastic
+
+  \[
+    V = V_{initial}\times\Gamma
+  \]
+
+  %% introduce gamma as ratio Vfloat / Vbuilt
+
+  %% atmospheric density profile
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.8\textwidth]{isa_density_profile.png}
+    \caption{Density in the International Standard Atmosphere}
+  \end{figure}
+
+
+\end{frame}
+\begin{frame}{The Origins of Superpressure}
+
+  %% Superpressure - where does this come from?
+
+  \begin{itemize}
+  \item Free lift
+    %% more mols of gas inside than displaced outside
+  \item Supertemperature
+    %% aka. superheat, initial studies tend to use supertemperature,
+    %% so we'll stick with that. Floating greenhouse.
+  \item Vertical Air Currents (Lally 1967, VI. D. p.31)
+    %% less significant, < 10%
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Calculating Superpressure 1}
+
+  Ideal gas law $PV = nRT$
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      % gas
+      \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.6\textwidth]{circle_gas.png}
+      \end{figure}
+
+      \[
+        P_{gas}V = {m_{gas}\over{M_{gas}}} R T_{gas}
+      \]
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      % displaced air
+      \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=0.6\textwidth]{circle_air_displaced.png}
+      \end{figure}
+
+      \[
+        P_{air}V = {m_{system}\over{M_{air}}} R T_{air}
+      \]
+      % can say this because we're floating
+    \end{column}
+  \end{columns}
+
+  % now make volumes equal, and cancel R
+
+\end{frame}
+
+\begin{frame}{Calculating Superpressure 2}
+
+  Definitions of Superpressure and Supertemperature:
+  % aka. superheat
+
+  \[
+    P_{super} = P_{gas} - P_{air}
+  \]
+  \[
+    T_{super} = T_{gas} - T_{air}
+  \]
+
+  Assuming volumes are equal:
+
+  % taking the equation on the previous page, and after some algebra..
+  % algebra is available as a separate document
+  \[
+    P_{super} = { {R\over{V}} \bigg[ \Big( {m_{gas}\over{M_{gas}}} - {m_{system}\over{M_{air}}} \Big)T_{air}   +  {{m_{gas}}\over{M_{gas}}}T_{super} \bigg]}
+  \]
+
+  % first term is due to extra gas - free lift, second due to supertemperature
+
+  The second term dominates, so:
+
+  \[
+    {P_{super}\over{T_{super}}} \approx   {{m_{gas}}\over{M_{gas}}}{R\over{V}}
+  \]
+
+  % So superpressure and supertemperature are proportional - this is
+  % well known (Lally etc.) - and we want to minimise the constant of
+  % proportionality.
+
+\end{frame}
+
+% \item Effects of changing gamma.
+
+
+\begin{frame}{Supertemperature}
+
+  \begin{figure}[!ht]
+    %% lally table
+    \centering
+    \includegraphics[width=0.8\textwidth]{lally_19_table_9.png}
+    \caption{Lally 1967, Table 9 p.24 (edited)}
+  \end{figure}
+
+  % this gives us a useful guesstimate at the supertemperature
+
+\end{frame}
+
+% I noted earlier that amateur balloons aren't spherical. Instead
+% they're make flat and then inflated. Bristol SEDS, Leo, Qualatex
+% are all essentially this shape. It's easy to make.
+
+\begin{frame}{Mylar Balloon Shape 1}
+
+  % This is the "mylar balloon".
+  % shape. So called because mathematicians found this shape "in the
+  % wild" and named it after the object that took this shape - namely
+  % party balloons made from mylar.
+
+  \begin{figure}[!ht]
+    %% mylar balloon shape
+    \centering
+    \includegraphics[width=0.7\textwidth]{paulsen_1994_figure_1.png}
+    \caption{Paulsen 1994, Figure 1}
+  \end{figure}
+
+  \[
+    \int_{0}^{a} \sqrt {1 + f'(x)^2}\ dx = r
+  \]
+
+  % When you inflate it, the radius that the 2D shape had still
+  % exists. So it limits the shape
+
+  % This is a well defined shape, can calcuate volume and so on - for
+  % instance the area of this cross section is 2 a^2
+
+\end{frame}
+
+\begin{frame}{Mylar Balloon Shape}
+
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\textwidth]{mylar_balloon_crimping_hot.png}
+    \caption{Crimping means a small area the in centre is stressed. }
+  \end{figure}
+
+  %% The size of the area that's stressed is related to the
+  %% elasticisty of the material, which probably is quite low at
+  %% stratospheric temperatures.
+
+  %% So this design doesn't appear to be much better than the tetroon,
+  %% where stress is concentrated at the corners.
+
+  %% But we've got a trick...
+
+\end{frame}
+
+\begin{frame}{The Magic of Pre-stretch}
+
+  %% Major step in making these balloons work - attributed to whom??
+
+  \begin{itemize}
+  \item Minimise Creep and relieve manufacturing stresses (Lally 1967, VI. C. p.28)
+    %% Lally knew about this
+  \item Increases $\Gamma$, leading to higher float and lower superpressure.
+    % our equation for density has volume on the bottom - we increase
+    % volume, get less dense and go higher. Same for pressure-thermal ratio
+    % Gamma ~1.7 for latest flights
+  \item Re-distributes stresses around mylar balloon shape.
+    %% When first built the stress is concentrated in the middle of each gore.
+    %% Pre-stretching equalises the stress over a much greater proportion of the gore.
+
+    %% Pre-stretch generally good, as long as your material
+    %% mantains its properties. We haven't explored gamma > 2 regime
+    %% however.
+
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Envelope Construction}
+
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.9\textwidth]{bristol_seds_balloon_1_9m.png}
+    \caption{Drawing for 1.9m balloon}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Envelope Construction}
+
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\textwidth]{bristol_seds_balloon_1_9m_film.png}
+    \caption{50$\mu$m film cross section}
+  \end{figure}
+
+  Thanks to Exploratory Ideas grant from CEOI.
+  %% Paid for the lab time to take a look at this
+
+\end{frame}
+
+\begin{frame}{Further Work}
+
+  \begin{itemize}
+  \item Web based calcuator - like the Burst Calculator.
+  \item Numerical analysis of previous flights.
+  \item Guidelines for minimum free lift.
+    %% drag equation
+  \item Modelling and measuring supertemperature.
+    %% not so easy, but do-able
+  \item Model for mylar tube shape.
+    %% bit of geometry
+  \item Explore $\Gamma > 2$
+    %% the limit of pre-stretch
+  \item Measuring strain on the ground (Angell and Pack, Apr. 1960).
+    %% no specilist tools needed
+  \item Relationship between stress and strain.
+    %% in non-linear region - okay this is hard
+
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Further Work}
+
+  \begin{itemize}
+  \item Have fun flying round the world...
+  \end{itemize}
+
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.6\textwidth]{pico-pi-logo.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Meridianal Hoop}
+
+  \begin{figure}[!ht]
+    \centering
+    \includegraphics[width=1\textwidth]{mylar_balloon_meridianal_hoop.png}
+    \caption{Meridianal Hoop of a Mylar Balloon }
+  \end{figure}
+
+\end{frame}
+
+
+\end{document}
