@@ -9,6 +9,10 @@ _[Slides (PDF)](a-quick-guide.pdf)_
 
 _[Ideal Gas Analysis (PDF)](ideal_gas_analysis.pdf)_
 
+See also:
+
+_[Prototype Calculator](https://richardeoin.github.io/sp/)_
+
 <br\>
 
 ## Slides
