@@ -1,0 +1,38 @@
+Original refrences from Dan Bowen's 2011 talk ([01]-[14]), extended by Richard Meadows 2016
+
+[00] University of Minnesota: Progress Report on High Altitude Plastic Balloons. 1952.pdf
+[01] J. K. ANGELL and D. H. PACK, “ANALYSIS OF SOME PRELIMINARY LOW-LEVEL CONSTANT LEVEL BALLOON (TETROON) FLIGHTS,” MONTHLY WEATHER REVIEW, vol. 88, no. 7, pp. 235-248, Apr. 1960.pdf
+[02] D. Booker and L. W. Cooper, “Superpressure Balloons for Weather Research,” Journal of Applied Meteorology, vol. 4, pp. 122–129, 1965.
+[03] N. J. Cherry, “Characteristics and Performance of Three Low-Cost Superpressure Balloon (Tetroon) Systems,” Journal of Applied Meteorology, vol. 10, no. 5, pp. 982-990, 1971.pdf
+[04] J. H. Hirsch and D. R. Booker, “Response of Superpressure Balloons to Vertical Air Motions,” Journal of Applied Meteorology, vol. 5, no. April, pp. 226-229, 1966.pdf
+[05] W. H. Hoecker, “A Computer Program for Calculating Tetroon Inflation-Factor Nomographs,” Journal of Applied Meteorology, vol. 20, no. 8, pp. 949-954, 1981.pdf
+[06] W. H. Hoecker, “A Universal Procedure for Deploying Constant-Volume Balloons and for Deriving Vertical Air Speeds from Them,” Journal of Applied Meteorology, vol. 14, no. September, pp. 1118-1124, 1975.pdf
+[07] V. E. Lally and NCAR, “Superpressure Balloons for Horizontal Soundings of the Atmosphere,” NCAR, 0, 1967.pdf
+[08] N. Levanon, R. A. Oehlkers, S. D. Ellington, and W. J. Massman, “On the Behavior of Superpressure Balloons at 150 mb,” Journal of Applied Meteorology, vol. 13, no. June, pp. 494-504, 1974.pdf
+[09] P. Morel and W. Bandeen, “the EOLE experiments: early results and current objectives,” Bulletin of the American Meteorological Society, vol. 54, no. 4, pp. 298-304, 1973.pdf
+[10] P. Morel, J. Fourrier, and P. Sitbon, 1968: The Occurrence of Icing on Constant Level Balloons. J. Appl. Meteor., 7, 626–634.pdf
+[11] P. G. Scott, T. M. Lew, J. S. Wilbeck, J. L. Rand, and R. H. Brezinskv, “Long Duration Balloon Technology Survey,” Huntsville, 1996.pdf
+[12] M. S. Smith and E. L. Rainwater, “OPTIMUM DESIGNS FOR SUPERPRESSURE BALLOONS,” Sulpher Springs, 2002.pdf
+[13] TWERLE Team, “The TWERLE Experiment,” Bulletin of the American Meteorological Society, vol. 58, no. 9, pp. 936-948, 1977.pdf
+[14] P. B. Voss, “Advances in Controlled Meteorological(CMET) Balloon Systems,” no. May. American Institute of Aeronautics and Astronautics, 1801 Alexander Bell Dr., Suite 500 Reston VA 20191-4344 USA,, pp. 1-5, 2009.pdf
+[15] G. D. Nastrom: The Response of Superpressure Balloons to Gravity Waves. Journal of Applied Meteorology, 19, 1013–1019. 1980.pdf
+[16] Geoffrey A. Landis: Low-altitude Exploration of the Venus Atmosphere by Balloon. 48th AIAA Aerospace Sciences Meeting, Orlando FL, January 6-9 2010.pdf
+[17] M. KEIL, Met Office, Exeter, UK: Assimilating data from a simulated global constellation of stratospheric balloons. Q. J. R. Meteorol. Soc. 130, pp. 2475–2493. 2004.pdf
+[18] THE CONCORDIASI PROJECT OVER ANTARCTICA DURING THE INTERNATIONAL POLAR YEAR (IPY). 2008.pdf
+[19] Global Aerospace Corporation: Global Constellation of Stratospheric Scientific Platforms. Phase II Final Report. November 2002.pdf
+[20] M. Pagitz and S. Pellegrino: Shape Optimization of “Pumpkin” Balloons. 2007.pdf
+[21] L. A. Grass: Superpressure Balloon for Constant Level Flight. 1963.pdf
+[22] JUSTIN H. SMALLEY: Balloon Shapes and Stresses Below the Design Altitude. December 1966.pdf
+[23] Kumar et al.: DEVELOPMENT OF ULTRA-THIN POLYETHYLENE BALLOONS FOR HIGH ALTITUDE RESEARCH UPTO MESOSPHERE. 2014.pdf
+[24] Frank Baginski, Michael Barg and William Collier: EXISTENCE THEOREMS FOR THIN INFLATED WRINKLED MEMBRANES SUBJECTED TO A HYDROSTATIC PRESSURE. 2006.pdf
+[25] Henry M. Cathey, Jr. and David L. Pierce: Development of the NASA Ultra-Long Duration Balloon. 2007.pdf
+[26] NCAR Technical Note 19: Low Modulus Strain Gages Stress Analysis of Balloon Structures. July 1966.pdf
+[27] NCAR Technical Note 21, Harold L. Baker: Balloon Stress Band Analysis. September 1966.pdf
+
+Dan Bowen's 2011 talk: https://www.youtube.com/watch?v=jtfJuTvaHxo
+Also Dan Bowen's 2012 talk: https://www.youtube.com/watch?v=cxkZViG4yoc&feature=youtu.be
+
+Richard Meadows's 2016 talk: https://www.youtube.com/watch?v=PQJAjDEq5AA&t=5h03m16s
+https://github.com/richardeoin/a-quick-guide
+
+Vince Lally's papers are archived here: https://opensky.ucar.edu/islandora/object/archives%3Avinlally?display=list
